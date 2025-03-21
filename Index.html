@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>interactive Art Gallery</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css"> 
+</head>
+<body>
+    <h1>Welcome to the interactive art gallery</h1>
+    <p>Here you can view and interact with art pieces from around the world</p>
+    <p>Click on the button below to view the gallery</p>
+    <div>
+        <button onclick="first()">First button</button>
+        <button onmousedown="second()">second button</button>
+        <button onmouseup="third()">Third button</button>
+        <button onmouseover="fourth()">Fourth button</button>
+        <button ondblclick="fifth()">fifth button</button>
+    </div>
+    <div>
+        <img src="photo for background.png" id="background" alt="first image">
+        <img src="photo for schedule.jpeg"id="schedule" alt="second image">
+        <img src="photo for the courses page.png" id="courses" alt="third image">
+        <img src="photo for the index page.jpg" id="index" alt="fourth image">
+    </div>
+</body>
+<script>
+    function first(){
+        document.getElementById("background").style.display="none";
+        document.getElementById("schedule").style.display="none";
+        document.getElementById("courses").style.display="none";
+        document.getElementById("index").style.display="none";
+     }
+     function second(){
+        document.getElementById("background").style.display="block";
+     }
+    function third(){
+        document.getElementById("schedule").style.display="block";
+     }
+    function fourth(){
+        document.getElementById("courses").style.display="block";
+     }
+    function fifth(){
+        document.getElementById("index").style.display="block";
+     }
+
+</script>
+</html>
